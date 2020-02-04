@@ -1,0 +1,251 @@
+/* Стиль для всего сайта */
+* {
+    font-family: "Montserrat", sans-serif;
+    margin     : 0px;
+    padding    : 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Стиль блока, в котором все остальные блоки */
+.container {
+    margin    : 0 auto;
+    min-height: 100%;
+    width     : 1300px;
+}
+
+.clearfix {
+    clear  : both;
+    content: "";
+    display: table;
+}
+
+/* Общая шапка для страниц Products-Contact */
+.header {
+    background-color: #f5f5f5;
+    height          : 100px;
+    width           : 1300px;
+}
+
+/* Логотип в шапке страницы */
+.logo {
+    color          : #212121;
+    display        : inline-block;
+    font-size      : 20px;
+    font-weight    : 700;
+    margin         : 35px 0 0 20px;
+    padding        : 10px 15px;
+    text-decoration: none;
+}
+
+/* Меню в шапке страницы */
+.menu {
+    float: right;
+}
+
+/* Пункты меню в шапке страницы */
+.menu_item {
+    display        : inline-block;
+    list-style-type: none;
+    margin-top     : 40px;
+}
+
+/* Пункты меню в шапке страницы */
+.menu_link {
+    color          : #8c8c8c;
+    font-size      : 14px;
+    font-weight    : 300;
+    letter-spacing : 1.4px;
+    padding        : 10px 15px;
+    text-decoration: none;
+    text-transform : uppercase;
+}
+
+/* Эффект при наведении мышки на пункт меню в шапке страницы */
+.menu_link:hover {
+    color: #212121;
+}
+
+/* Активный пункт в меню в шапке сайта */
+.menu_link_active {
+    border-bottom: 3px solid #212121;
+    color        : #212121;
+    font-weight  : 700;
+}
+
+/* Стиль в основном блоке content */
+.content {
+    text-align: left;
+}
+
+.content h1 {
+    color      : #212121;
+    font-size  : 50px;
+    font-weight: 400;
+    margin-top : 50px;
+    text-align : center;
+}
+
+.content h2 {
+    color      : #212121;
+    font-size  : 30px;
+    font-weight: 400;
+    margin     : 20px 0 0 20px;
+}
+
+.content p {
+    color      : #8c8c8c;
+    font-size  : 20px;
+    font-weight: 300;
+    line-height: 23px;
+    margin-top : 10px;
+}
+
+.content span {
+    color      : #212121;
+    font-size  : 20px;
+    font-weight: 400;
+}
+
+/* Стиль текста на формах */
+form {
+    text-align: center;
+}
+
+input {
+    color      : #000000;
+    font-size  : 20px;
+    font-weight: 300;
+    width      : 250px;
+}
+
+input:focus {
+    background-color: #e0ffff;
+}
+
+input:hover {
+    background-color: #212121;
+    color           : #ffffff;
+}
+
+input[type=submit] {
+    font-size  : 20px;
+    font-weight: 300;
+    margin     : 20px;
+    padding    : 10px;
+    width      : 250px;
+}
+
+/* Стиль блока с постером фильма */
+.poster {
+    float: left;
+}
+
+.poster img {
+    width: 200px;
+}
+
+/* Стиль блока с описанием фильма */
+.movie {
+    margin-left: 220px;
+}
+
+.clr {
+    height: 150px;
+}
+
+/* Подвал для страниц */
+.footer {
+    background-color: #f7f7f7;
+    height          : 150px;
+    margin          : -150px auto 0;
+    width           : 1300px;
+}
+
+/* Стиль для заголовков в подвале страниц Products-Contact */
+.footer a {
+    color          : #6c6c6c;
+    display        : inline-block;
+    font-size      : 18px;
+    font-weight    : 700;
+    letter-spacing : 1.8px;
+    padding        : 10px 15px;
+    text-decoration: none;
+    text-transform : uppercase;
+}
+
+.footer a:hover {
+    color: #212121;
+}
+
+/* Стиль текста в подвале */
+.footer p {
+    color      : #212121;
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding    : 10px 0px 0px 0px;
+}
+
+.footer span {
+    color: red;
+}
+
+/* Положение блоков в подвале */
+.footer_block {
+    float  : left;
+    margin : 10px 0px 0px 20px;
+    padding: 0px;
+    width  : 300px;
+}
+
+/* Положение блока copyright в подвале страниц */
+.footer_bottom {
+    float      : left;
+    margin-left: 20px;
+}
+
+/* Положение надписи Права защищены в подвале */
+.copyright {
+    float: left;
+}
+
+/* Положение списка социальных сетей в подвале страниц */
+.social_networks {
+    float      : left;
+    margin-left: 300px;
+}
+
+/* Размеры логотипов соцсетей */
+img[alt="fb"],
+img[alt="twitter"],
+img[alt="vk"] {
+    height     : 20px;
+    width      : 20px;
+    margin-left: -5px;
+    padding    : 0;
+}
+
+/* Показываем логотипы социальных сетей в списке */
+.social_network_link {
+    display         : inline-block;
+    background-color: #6c6c6c;
+    border-radius   : 50%;
+    height          : 20px;
+    width           : 10px;
+    margin          : 0;
+    padding         : 0;
+    text-align      : center;
+    vertical-align  : middle;
+}
+
+.social_network_link:hover {
+    background-color: #212121;
+}
+
+.social_network_link:focus {
+    background-color: skyblue;
+}
